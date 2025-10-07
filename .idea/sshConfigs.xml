@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SshConfigs">
+    <configs>
+      <sshConfig authType="PASSWORD" host="www.sod-erdene.web.bbq" id="c1721c9c-25a5-483f-a104-42c12a21e573" port="22" nameFormat="DESCRIPTIVE" username="sod" useOpenSSHConfig="true" />
+    </configs>
+  </component>
+</project>

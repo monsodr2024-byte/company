@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="ec6ea2d6-d765-48b6-9d40-42e3ac7bff1f" name="company-linux" url="http://www.company.sod-erdene.web.bbq">
+        <fileTransfer rootFolder="/var/www/company" accessType="SFTP" host="www.sod-erdene.web.bbq" port="22" sshConfigId="c1721c9c-25a5-483f-a104-42c12a21e573" sshConfig="sod@www.sod-erdene.web.bbq:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" isUseSudo="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
