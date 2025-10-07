@@ -21,7 +21,6 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
 </body>
 </html>
 <?php
-
 }
 elseif ($_SERVER["REQUEST_METHOD"] == "POST"){
     $fname = $_POST["fname"];

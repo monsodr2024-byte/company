@@ -11,7 +11,6 @@ $stmt->execute();
 $result = $stmt -> fetch(PDO::FETCH_ASSOC);
 $fname = $result["fname"];
 $lname = $result["lname"];
-
 # var_dump($result);
 
 #print("<br>");
