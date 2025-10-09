@@ -1,7 +1,7 @@
 DROP DATABASE if exists company;
 create database company;
 use company;
-create table employees
+create table department
 (
     id int auto_increment primary key ,
     fname varchar(255),
@@ -9,10 +9,10 @@ create table employees
 );
 
 INSERT INTO employees(fname, lname)
-values ('Peter1',  'Pan1'),
+values ('Peter1company',  'Pan1'),
        ('Donald1', 'Trump1'),
        ('George1', 'Busch');
 
 insert into employ(lastname, firstname)
- VALUES ('bunny' , 'sop'),
+ VALUES ('bunnycompany' , 'sop'),
         ('panny','gunni');

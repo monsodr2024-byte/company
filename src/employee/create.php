@@ -16,7 +16,7 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
     <input type="text" name="fname" placeholder="fname" >
     <input type="text" name="lname" placeholder="lname" >
     <input type="submit" value="Submit">
-    <button><a href="firstread.php">Züruck</a></button>
+    <button><a href="read">Züruck</a></button>
 </form>
 </body>
 </html>

@@ -1,7 +1,7 @@
 <?php
 $conn = new pdo('mysql:host=localhost;dbname=company', 'phpstorm', '123456');
 $sql = 'delete from employees where id = :id';
-$id = $_GET['id'];
+#$id = $_GET['id'];
 $stmt = $conn -> prepare($sql);
 $stmt -> bindParam(':id', $id);
 $stmt->execute();
@@ -17,5 +17,6 @@ $stmt->execute();
 </head>
 <body>
    <p>Ausgewählte Eintrag wurde von dem DB gelöscht !</p>
+   <button><a href="read">Züruck</a></button>
 </body>
 </html>

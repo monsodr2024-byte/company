@@ -1,32 +1,5 @@
 <?php
 
-$users = [
-    [
-        "lastname" => "Abo Shameh",
-        "firstname" => "Ahmad",
-        "domain" => "www.ahmad.bbq.zz.",
-        "ip" => "10.101.105.100",
-        "city" => "Berlin",
-        "country" => "Germany"
-    ],
-    [
-        "lastname" => "Bafaiz",
-        "firstname" => "Zamir",
-        "domain" => "www.zamir.bbq.zz.",
-        "ip" => "10.101.105.105",
-        "city" => "Paris",
-        "country" => "France"
-    ],
-    [
-        "lastname" => "Bayar",
-        "firstname" => "Gülden",
-        "domain" => "www.guelden.bbq.zz.",
-        "ip" => "10.101.105.110",
-        "city" => "Istanbul",
-        "country" => "Turkey"
-    ]];
-
-
 $conn = new PDO('mysql:host=localhost;dbname=company', 'phpstorm', '123456');
 $sql = 'select * from employees';
 $stmt = $conn -> prepare($sql);
@@ -65,8 +38,8 @@ function createTable(array $data, array|false $ueberschrifeten=false, string $fa
             echo "<td>$value</td>\n";
         }
         $id = $data[$i]['id'];
-        echo "<td><a href='firstdelete.php?id=$id'>Delete</a></td>";
-        echo "<td><a href='firstupdate.php?id=$id'>Update</a></td>";
+        echo "<td><a href='delete/$id'>Delete</a></td>";
+        echo "<td><a href='update/$id'>Update</a></td>";
         echo "</tr>\n";
     }
 
@@ -103,7 +76,7 @@ createTable($user2,false,'lightgreen','rosybrown');
 echo "\n\n";
 ?>
 <br>
-<button><a href="firstcreate.php">Neue Entrag</a></button>
+<a href="create">Neue Entrag</a>
 </body>
 </html>
 

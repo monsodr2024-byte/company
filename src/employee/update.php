@@ -2,7 +2,7 @@
 
 if ($_SERVER["REQUEST_METHOD"] == "GET") {
 
-$id = $_GET["id"];
+#$id = $_GET["id"];
 $conn = new PDO('mysql:host=localhost;dbname=company', 'phpstorm', '123456');
 $sql = 'select * from employees where id = :id';
 $stmt = $conn -> prepare($sql);
@@ -11,19 +11,7 @@ $stmt->execute();
 $result = $stmt -> fetch(PDO::FETCH_ASSOC);
 $fname = $result["fname"];
 $lname = $result["lname"];
-# var_dump($result);
 
-#print("<br>");
-#echo "hier kommt id: ";
-#var_dump($id);
-
- #   print("<br>");
-  #  echo "hier kommt fname: ";
-   # var_dump($fname);
-
-    #print("<br>");
-    #echo "hier kommt lname: ";
-    #var_dump($lname);
 
     ?>
     <!doctype html>
@@ -57,5 +45,6 @@ $lname = $result["lname"];
     $stmt->bindParam(':lname', $lname);
     $stmt->bindParam(':id', $id);
     $stmt->execute();
+
 }
 ?>
